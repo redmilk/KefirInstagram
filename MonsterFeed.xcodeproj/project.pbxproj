@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		85F87B1D9AEB34501B22BA08 /* Pods_MonsterFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7500AA074C4733911A465F97 /* Pods_MonsterFeed.framework */; };
+		ACC00D8C1E28F64700947C08 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */; };
+		ACC00D8D1E28F64700947C08 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC00D8B1E28F64700947C08 /* SignUpViewController.xib */; };
+		ACC00D901E2960AB00947C08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */; };
 		ACFCFDB81E27E4B10084E79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */; };
-		ACFCFDBA1E27E4B10084E79E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCFDB91E27E4B10084E79E /* ViewController.swift */; };
 		ACFCFDBD1E27E4B10084E79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFCFDBB1E27E4B10084E79E /* Main.storyboard */; };
 		ACFCFDC01E27E4B10084E79E /* MonsterFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACFCFDBE1E27E4B10084E79E /* MonsterFeed.xcdatamodeld */; };
 		ACFCFDC21E27E4B10084E79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCFDC11E27E4B10084E79E /* Assets.xcassets */; };
@@ -19,9 +21,11 @@
 
 /* Begin PBXFileReference section */
 		7500AA074C4733911A465F97 /* Pods_MonsterFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonsterFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ACC00D8B1E28F64700947C08 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ACFCFDB41E27E4B00084E79E /* MonsterFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACFCFDB91E27E4B10084E79E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACFCFDBC1E27E4B10084E79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACFCFDBF1E27E4B10084E79E /* MonsterFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MonsterFeed.xcdatamodel; sourceTree = "<group>"; };
 		ACFCFDC11E27E4B10084E79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +57,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		ACC00D8E1E29147300947C08 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */,
+				ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		ACFCFDAB1E27E4B00084E79E = {
 			isa = PBXGroup;
 			children = (
@@ -74,14 +87,15 @@
 		ACFCFDB61E27E4B00084E79E /* MonsterFeed */ = {
 			isa = PBXGroup;
 			children = (
-				ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */,
-				ACFCFDB91E27E4B10084E79E /* ViewController.swift */,
 				ACFCFDBB1E27E4B10084E79E /* Main.storyboard */,
+				ACC00D8E1E29147300947C08 /* Controllers */,
 				ACFCFDC11E27E4B10084E79E /* Assets.xcassets */,
+				ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */,
 				ACFCFDC31E27E4B10084E79E /* LaunchScreen.storyboard */,
 				ACFCFDCC1E27E96E0084E79E /* GoogleService-Info.plist */,
 				ACFCFDC61E27E4B10084E79E /* Info.plist */,
 				ACFCFDBE1E27E4B10084E79E /* MonsterFeed.xcdatamodeld */,
+				ACC00D8B1E28F64700947C08 /* SignUpViewController.xib */,
 			);
 			path = MonsterFeed;
 			sourceTree = "<group>";
@@ -157,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACC00D8D1E28F64700947C08 /* SignUpViewController.xib in Resources */,
 				ACFCFDC51E27E4B10084E79E /* LaunchScreen.storyboard in Resources */,
 				ACFCFDCD1E27E96E0084E79E /* GoogleService-Info.plist in Resources */,
 				ACFCFDC21E27E4B10084E79E /* Assets.xcassets in Resources */,
@@ -219,8 +234,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACFCFDBA1E27E4B10084E79E /* ViewController.swift in Sources */,
 				ACFCFDC01E27E4B10084E79E /* MonsterFeed.xcdatamodeld in Sources */,
+				ACC00D8C1E28F64700947C08 /* SignUpViewController.swift in Sources */,
+				ACC00D901E2960AB00947C08 /* LoginViewController.swift in Sources */,
 				ACFCFDB81E27E4B10084E79E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,6 +405,7 @@
 				ACFCFDCB1E27E4B10084E79E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
