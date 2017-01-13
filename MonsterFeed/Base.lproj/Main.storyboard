@@ -43,7 +43,7 @@
                                 <state key="normal" title="Sign Up"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1003342792391777" green="0.21667581796646118" blue="0.051069654524326324" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="H1I-S6-3Bv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="20V-bs-t1B"/>
                             <constraint firstItem="H1I-S6-3Bv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8IP-41-4wi"/>
