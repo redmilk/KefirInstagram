@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>105347769710-4f1qg0f31mejqkb78bi6le81m25bsbt0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.105347769710-4f1qg0f31mejqkb78bi6le81m25bsbt0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDi9FFZ92NEZiXfsCxqOypeVzFyB9MAPZg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>105347769710</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pq.MonsterFeed</string>
+	<key>PROJECT_ID</key>
+	<string>test-13497</string>
+	<key>STORAGE_BUCKET</key>
+	<string>test-13497.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:105347769710:ios:f18d8186d42ab20e</string>
+	<key>DATABASE_URL</key>
+	<string>https://test-13497.firebaseio.com</string>
+</dict>
+</plist>

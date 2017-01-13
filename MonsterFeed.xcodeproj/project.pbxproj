@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85F87B1D9AEB34501B22BA08 /* Pods_MonsterFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7500AA074C4733911A465F97 /* Pods_MonsterFeed.framework */; };
+		ACFCFDB81E27E4B10084E79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */; };
+		ACFCFDBA1E27E4B10084E79E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCFDB91E27E4B10084E79E /* ViewController.swift */; };
+		ACFCFDBD1E27E4B10084E79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFCFDBB1E27E4B10084E79E /* Main.storyboard */; };
+		ACFCFDC01E27E4B10084E79E /* MonsterFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACFCFDBE1E27E4B10084E79E /* MonsterFeed.xcdatamodeld */; };
+		ACFCFDC21E27E4B10084E79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACFCFDC11E27E4B10084E79E /* Assets.xcassets */; };
+		ACFCFDC51E27E4B10084E79E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFCFDC31E27E4B10084E79E /* LaunchScreen.storyboard */; };
+		ACFCFDCD1E27E96E0084E79E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACFCFDCC1E27E96E0084E79E /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7500AA074C4733911A465F97 /* Pods_MonsterFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonsterFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFCFDB41E27E4B00084E79E /* MonsterFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACFCFDB91E27E4B10084E79E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACFCFDBC1E27E4B10084E79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACFCFDBF1E27E4B10084E79E /* MonsterFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MonsterFeed.xcdatamodel; sourceTree = "<group>"; };
+		ACFCFDC11E27E4B10084E79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACFCFDC41E27E4B10084E79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACFCFDC61E27E4B10084E79E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACFCFDCC1E27E96E0084E79E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D21002BA36F03443A1E4FA15 /* Pods-MonsterFeed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonsterFeed.release.xcconfig"; path = "Pods/Target Support Files/Pods-MonsterFeed/Pods-MonsterFeed.release.xcconfig"; sourceTree = "<group>"; };
+		E58544F38ED721D1C9E419F9 /* Pods-MonsterFeed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MonsterFeed.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MonsterFeed/Pods-MonsterFeed.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACFCFDB11E27E4B00084E79E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F87B1D9AEB34501B22BA08 /* Pods_MonsterFeed.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A34F992A7F64B5C691D8E1F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E58544F38ED721D1C9E419F9 /* Pods-MonsterFeed.debug.xcconfig */,
+				D21002BA36F03443A1E4FA15 /* Pods-MonsterFeed.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ACFCFDAB1E27E4B00084E79E = {
+			isa = PBXGroup;
+			children = (
+				ACFCFDB61E27E4B00084E79E /* MonsterFeed */,
+				ACFCFDB51E27E4B00084E79E /* Products */,
+				A34F992A7F64B5C691D8E1F6 /* Pods */,
+				B69ACD45207B0C7735C1DDF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ACFCFDB51E27E4B00084E79E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACFCFDB41E27E4B00084E79E /* MonsterFeed.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACFCFDB61E27E4B00084E79E /* MonsterFeed */ = {
+			isa = PBXGroup;
+			children = (
+				ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */,
+				ACFCFDB91E27E4B10084E79E /* ViewController.swift */,
+				ACFCFDBB1E27E4B10084E79E /* Main.storyboard */,
+				ACFCFDC11E27E4B10084E79E /* Assets.xcassets */,
+				ACFCFDC31E27E4B10084E79E /* LaunchScreen.storyboard */,
+				ACFCFDCC1E27E96E0084E79E /* GoogleService-Info.plist */,
+				ACFCFDC61E27E4B10084E79E /* Info.plist */,
+				ACFCFDBE1E27E4B10084E79E /* MonsterFeed.xcdatamodeld */,
+			);
+			path = MonsterFeed;
+			sourceTree = "<group>";
+		};
+		B69ACD45207B0C7735C1DDF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7500AA074C4733911A465F97 /* Pods_MonsterFeed.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACFCFDB31E27E4B00084E79E /* MonsterFeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACFCFDC91E27E4B10084E79E /* Build configuration list for PBXNativeTarget "MonsterFeed" */;
+			buildPhases = (
+				CEA0C00B193935CE4555F9B0 /* [CP] Check Pods Manifest.lock */,
+				ACFCFDB01E27E4B00084E79E /* Sources */,
+				ACFCFDB11E27E4B00084E79E /* Frameworks */,
+				ACFCFDB21E27E4B00084E79E /* Resources */,
+				D5BE1A2346D2F2D19B66F59F /* [CP] Embed Pods Frameworks */,
+				448A26D9C9EADD68EBB54F3A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MonsterFeed;
+			productName = MonsterFeed;
+			productReference = ACFCFDB41E27E4B00084E79E /* MonsterFeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACFCFDAC1E27E4B00084E79E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ApiqA;
+				TargetAttributes = {
+					ACFCFDB31E27E4B00084E79E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZNLBEN9CLK;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ACFCFDAF1E27E4B00084E79E /* Build configuration list for PBXProject "MonsterFeed" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACFCFDAB1E27E4B00084E79E;
+			productRefGroup = ACFCFDB51E27E4B00084E79E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACFCFDB31E27E4B00084E79E /* MonsterFeed */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACFCFDB21E27E4B00084E79E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFCFDC51E27E4B10084E79E /* LaunchScreen.storyboard in Resources */,
+				ACFCFDCD1E27E96E0084E79E /* GoogleService-Info.plist in Resources */,
+				ACFCFDC21E27E4B10084E79E /* Assets.xcassets in Resources */,
+				ACFCFDBD1E27E4B10084E79E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		448A26D9C9EADD68EBB54F3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonsterFeed/Pods-MonsterFeed-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEA0C00B193935CE4555F9B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5BE1A2346D2F2D19B66F59F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MonsterFeed/Pods-MonsterFeed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACFCFDB01E27E4B00084E79E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFCFDBA1E27E4B10084E79E /* ViewController.swift in Sources */,
+				ACFCFDC01E27E4B10084E79E /* MonsterFeed.xcdatamodeld in Sources */,
+				ACFCFDB81E27E4B10084E79E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ACFCFDBB1E27E4B10084E79E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACFCFDBC1E27E4B10084E79E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACFCFDC31E27E4B10084E79E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACFCFDC41E27E4B10084E79E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACFCFDC71E27E4B10084E79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACFCFDC81E27E4B10084E79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACFCFDCA1E27E4B10084E79E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E58544F38ED721D1C9E419F9 /* Pods-MonsterFeed.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZNLBEN9CLK;
+				INFOPLIST_FILE = MonsterFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pq.MonsterFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		ACFCFDCB1E27E4B10084E79E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D21002BA36F03443A1E4FA15 /* Pods-MonsterFeed.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZNLBEN9CLK;
+				INFOPLIST_FILE = MonsterFeed/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pq.MonsterFeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACFCFDAF1E27E4B00084E79E /* Build configuration list for PBXProject "MonsterFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFCFDC71E27E4B10084E79E /* Debug */,
+				ACFCFDC81E27E4B10084E79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACFCFDC91E27E4B10084E79E /* Build configuration list for PBXNativeTarget "MonsterFeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACFCFDCA1E27E4B10084E79E /* Debug */,
+				ACFCFDCB1E27E4B10084E79E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACFCFDBE1E27E4B10084E79E /* MonsterFeed.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACFCFDBF1E27E4B10084E79E /* MonsterFeed.xcdatamodel */,
+			);
+			currentVersion = ACFCFDBF1E27E4B10084E79E /* MonsterFeed.xcdatamodel */;
+			path = MonsterFeed.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = ACFCFDAC1E27E4B00084E79E /* Project object */;
+}
