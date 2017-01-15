@@ -52,6 +52,7 @@ class SignUpViewController: UIViewController, UIImagePickerControllerDelegate, U
             self.nextButton.isHidden = false
         }
         self.dismiss(animated: true, completion: nil)
+        self.nextButton.isHidden = false
     }
     
     /// Select Picture

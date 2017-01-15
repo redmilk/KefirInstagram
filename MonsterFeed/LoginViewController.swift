@@ -49,7 +49,7 @@ class LoginViewController: UIViewController {
                 print(error!.localizedDescription)
             }
             
-            if let user = user {
+            if let _ = user {
                 
                 let usersViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "UsersVC")
                 

@@ -11,6 +11,9 @@
 		ACC00D8C1E28F64700947C08 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */; };
 		ACC00D8D1E28F64700947C08 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC00D8B1E28F64700947C08 /* SignUpViewController.xib */; };
 		ACC00D901E2960AB00947C08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */; };
+		ACEADDB21E2982E6007C89F4 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEADDB11E2982E6007C89F4 /* UserCell.swift */; };
+		ACEADDB41E298524007C89F4 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEADDB31E298524007C89F4 /* UsersViewController.swift */; };
+		ACEADDB81E298A86007C89F4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEADDB71E298A86007C89F4 /* User.swift */; };
 		ACFCFDB81E27E4B10084E79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */; };
 		ACFCFDBD1E27E4B10084E79E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACFCFDBB1E27E4B10084E79E /* Main.storyboard */; };
 		ACFCFDC01E27E4B10084E79E /* MonsterFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACFCFDBE1E27E4B10084E79E /* MonsterFeed.xcdatamodeld */; };
@@ -24,6 +27,9 @@
 		ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ACC00D8B1E28F64700947C08 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ACEADDB11E2982E6007C89F4 /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		ACEADDB31E298524007C89F4 /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		ACEADDB71E298A86007C89F4 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ACFCFDB41E27E4B00084E79E /* MonsterFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACFCFDBC1E27E4B10084E79E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,8 +68,25 @@
 			children = (
 				ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */,
 				ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */,
+				ACEADDB31E298524007C89F4 /* UsersViewController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		ACEADDB51E2989E2007C89F4 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				ACEADDB11E2982E6007C89F4 /* UserCell.swift */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		ACEADDB61E298A5A007C89F4 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				ACEADDB71E298A86007C89F4 /* User.swift */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		ACFCFDAB1E27E4B00084E79E = {
@@ -88,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				ACFCFDBB1E27E4B10084E79E /* Main.storyboard */,
+				ACEADDB61E298A5A007C89F4 /* Objects */,
+				ACEADDB51E2989E2007C89F4 /* CustomCells */,
 				ACC00D8E1E29147300947C08 /* Controllers */,
 				ACFCFDC11E27E4B10084E79E /* Assets.xcassets */,
 				ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */,
@@ -235,9 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFCFDC01E27E4B10084E79E /* MonsterFeed.xcdatamodeld in Sources */,
+				ACEADDB41E298524007C89F4 /* UsersViewController.swift in Sources */,
 				ACC00D8C1E28F64700947C08 /* SignUpViewController.swift in Sources */,
 				ACC00D901E2960AB00947C08 /* LoginViewController.swift in Sources */,
+				ACEADDB21E2982E6007C89F4 /* UserCell.swift in Sources */,
 				ACFCFDB81E27E4B10084E79E /* AppDelegate.swift in Sources */,
+				ACEADDB81E298A86007C89F4 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
