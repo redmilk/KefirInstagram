@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85F87B1D9AEB34501B22BA08 /* Pods_MonsterFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7500AA074C4733911A465F97 /* Pods_MonsterFeed.framework */; };
+		AC43BBCB1E2BFDED00A90F89 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43BBCA1E2BFDED00A90F89 /* UploadViewController.swift */; };
 		ACC00D8C1E28F64700947C08 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */; };
 		ACC00D8D1E28F64700947C08 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC00D8B1E28F64700947C08 /* SignUpViewController.xib */; };
 		ACC00D901E2960AB00947C08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		7500AA074C4733911A465F97 /* Pods_MonsterFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonsterFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC43BBCA1E2BFDED00A90F89 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		ACC00D8B1E28F64700947C08 /* SignUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				ACC00D8A1E28F64700947C08 /* SignUpViewController.swift */,
 				ACC00D8F1E2960AB00947C08 /* LoginViewController.swift */,
 				ACEADDB31E298524007C89F4 /* UsersViewController.swift */,
+				AC43BBCA1E2BFDED00A90F89 /* UploadViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -111,11 +114,11 @@
 			isa = PBXGroup;
 			children = (
 				ACFCFDBB1E27E4B10084E79E /* Main.storyboard */,
+				ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */,
 				ACEADDB61E298A5A007C89F4 /* Objects */,
 				ACEADDB51E2989E2007C89F4 /* CustomCells */,
 				ACC00D8E1E29147300947C08 /* Controllers */,
 				ACFCFDC11E27E4B10084E79E /* Assets.xcassets */,
-				ACFCFDB71E27E4B10084E79E /* AppDelegate.swift */,
 				ACFCFDC31E27E4B10084E79E /* LaunchScreen.storyboard */,
 				ACFCFDCC1E27E96E0084E79E /* GoogleService-Info.plist */,
 				ACFCFDC61E27E4B10084E79E /* Info.plist */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFCFDC01E27E4B10084E79E /* MonsterFeed.xcdatamodeld in Sources */,
+				AC43BBCB1E2BFDED00A90F89 /* UploadViewController.swift in Sources */,
 				ACEADDB41E298524007C89F4 /* UsersViewController.swift in Sources */,
 				ACC00D8C1E28F64700947C08 /* SignUpViewController.swift in Sources */,
 				ACC00D901E2960AB00947C08 /* LoginViewController.swift in Sources */,
