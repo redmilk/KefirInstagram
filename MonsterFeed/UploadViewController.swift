@@ -64,7 +64,7 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
                     let feed = ["userId" : uid,
                                 "pathToImage" : url.absoluteString,
                                 "likes" : 0,
-                                "author" : FIRAuth.auth()?.currentUser!.displayName!,
+                                "author" : FIRAuth.auth()?.currentUser!.displayName! as Any,
                                 "postID" : key] as [String : Any]
                     
                     let postFeed = ["\(key)" : feed]
