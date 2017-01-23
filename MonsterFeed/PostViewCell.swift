@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 
 class PostViewCell: UICollectionViewCell {
-   
+    
     @IBOutlet weak var likes: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var unlikeButton: UIButton!
@@ -66,24 +66,23 @@ class PostViewCell: UICollectionViewCell {
                 if let peopleWhoLike = postProperties["peopleWhoLike"] as? [String : AnyObject] {
                     for(id, person) in peopleWhoLike {
                         if person as? String == FIRAuth.auth()!.currentUser!.uid {
-                            ref.child("posts").child(self.postID).child(id).removeValue(completionBlock: { (error, reff) in
+                            ref.child("posts").child(self.postID).child("peopleWhoLike").child(id).removeValue(completionBlock: { (error, reff) in
                                 if error == nil {
                                     ref.child("posts").child(self.postID).observeSingleEvent(of: .value, with: { (snap) in
                                         
                                         if let postProperties_ = snap.value as? [String : AnyObject] {
-                                            let peopleWhoLike_ = postProperties_["peopleWhoLike"] as? [String : AnyObject]
-                                            let likesCount = peopleWhoLike_!.count
-                                            self.likes.text = "\(likesCount) Likes"
-                                            ref.child("posts").child(self.postID).updateChildValues(["likes" : likesCount])
-                                        } else {
-                                            self.likes.text = "0 Likes"
-                                            ref.child("posts").child(self.postID).updateChildValues(["likes" : 0])
+                                            if let peopleWhoLike_ = postProperties_["peopleWhoLike"] as? [String : AnyObject] {
+                                                let likesCount = peopleWhoLike_.count
+                                                self.likes.text = "\(likesCount) Likes"
+                                                ref.child("posts").child(self.postID).updateChildValues(["likes" : likesCount])
+                                            } else {
+                                                self.likes.text = "0 Likes"
+                                                ref.child("posts").child(self.postID).updateChildValues(["likes" : 0])
+                                            }
                                         }
-                                        
                                     })
                                 }
                             })
-                            
                             self.likeButton.isHidden = false
                             self.unlikeButton.isHidden = true
                             self.unlikeButton.isEnabled = true
@@ -92,7 +91,6 @@ class PostViewCell: UICollectionViewCell {
                     }
                 }
             }
-            
         })
         ref.removeAllObservers()
     }

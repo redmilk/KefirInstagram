@@ -23,7 +23,9 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
         super.viewDidLoad()
         
         picker.delegate = self
-
+        
+        setBorderToButton(button: postButton, width: BUTTON_BORDER_WIDTH, color: BUTTON_COLOR)
+        setBorderToButton(button: selectImageButton, width: BUTTON_BORDER_WIDTH, color: BUTTON_COLOR)
     }
     
     
@@ -31,7 +33,6 @@ class UploadViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerEditedImage] as? UIImage {
             self.imageView.image = image
-            self.selectImageButton.isHidden = true
             self.postButton.isHidden = false
         }
         self.dismiss(animated: true, completion: nil)
