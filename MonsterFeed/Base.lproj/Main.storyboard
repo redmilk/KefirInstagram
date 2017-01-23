@@ -439,24 +439,21 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-7s-BuP">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-7s-BuP">
                                                     <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="176" id="aVj-sg-8Zy"/>
-                                                    </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH1-1W-cTD">
+                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JH1-1W-cTD">
                                                     <rect key="frame" x="16" y="176" width="30" height="30"/>
                                                     <state key="normal" title="Like"/>
                                                     <connections>
                                                         <action selector="likeButtonHandler:" destination="l7Q-4T-4a3" eventType="touchUpInside" id="Tde-J2-IBu"/>
                                                     </connections>
                                                 </button>
-                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ML8-f0-syN" userLabel="Separator">
+                                                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ML8-f0-syN" userLabel="Separator">
                                                     <rect key="frame" x="0.0" y="205" width="320" height="6"/>
                                                     <color key="backgroundColor" red="0.619312584400177" green="0.84354335069656372" blue="0.060371354222297668" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Posted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erJ-KX-wLH">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="User Posted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erJ-KX-wLH">
                                                     <rect key="frame" x="215" y="179" width="94" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -468,7 +465,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-y3-XzZ">
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQ2-y3-XzZ">
                                                     <rect key="frame" x="8" y="177" width="37" height="27"/>
                                                     <state key="normal" title="Unlike"/>
                                                     <connections>
@@ -478,20 +475,18 @@
                                             </subviews>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="uxG-7s-BuP" firstAttribute="leading" secondItem="l7Q-4T-4a3" secondAttribute="leading" id="2ch-t8-idP"/>
                                             <constraint firstAttribute="trailing" secondItem="ML8-f0-syN" secondAttribute="trailing" id="7de-Ez-C0e"/>
+                                            <constraint firstItem="uxG-7s-BuP" firstAttribute="height" secondItem="l7Q-4T-4a3" secondAttribute="height" constant="-64" id="93o-sa-BeA"/>
                                             <constraint firstItem="ML8-f0-syN" firstAttribute="leading" secondItem="l7Q-4T-4a3" secondAttribute="leading" id="9U2-jA-OO4"/>
                                             <constraint firstItem="ML8-f0-syN" firstAttribute="top" secondItem="bQ2-y3-XzZ" secondAttribute="bottom" constant="1" id="BXW-KY-Jj8"/>
                                             <constraint firstItem="7mx-Cb-COO" firstAttribute="top" secondItem="ML8-f0-syN" secondAttribute="bottom" constant="8" id="BnE-bD-o9W"/>
-                                            <constraint firstItem="uxG-7s-BuP" firstAttribute="top" secondItem="l7Q-4T-4a3" secondAttribute="top" id="JiP-ff-bF7"/>
-                                            <constraint firstAttribute="trailing" secondItem="uxG-7s-BuP" secondAttribute="trailing" id="Oyj-M0-jeg"/>
                                             <constraint firstItem="bQ2-y3-XzZ" firstAttribute="leading" secondItem="l7Q-4T-4a3" secondAttribute="leadingMargin" id="T1g-2V-xz9"/>
                                             <constraint firstAttribute="trailingMargin" secondItem="erJ-KX-wLH" secondAttribute="trailing" constant="3" id="TdR-Kc-iYb"/>
-                                            <constraint firstItem="bQ2-y3-XzZ" firstAttribute="top" secondItem="uxG-7s-BuP" secondAttribute="bottom" constant="1" id="X9U-aB-ewi"/>
                                             <constraint firstItem="JH1-1W-cTD" firstAttribute="leading" secondItem="l7Q-4T-4a3" secondAttribute="leadingMargin" constant="8" id="ad7-2J-cyR"/>
                                             <constraint firstItem="7mx-Cb-COO" firstAttribute="leading" secondItem="l7Q-4T-4a3" secondAttribute="leading" constant="8" id="g9A-IB-5ol"/>
-                                            <constraint firstItem="erJ-KX-wLH" firstAttribute="top" secondItem="uxG-7s-BuP" secondAttribute="bottom" constant="3" id="lDo-hF-iH1"/>
-                                            <constraint firstItem="JH1-1W-cTD" firstAttribute="top" secondItem="uxG-7s-BuP" secondAttribute="bottom" id="qaH-fl-U40"/>
+                                            <constraint firstItem="uxG-7s-BuP" firstAttribute="centerY" secondItem="l7Q-4T-4a3" secondAttribute="centerY" constant="-32" id="hQg-HU-BED"/>
+                                            <constraint firstItem="uxG-7s-BuP" firstAttribute="width" secondItem="l7Q-4T-4a3" secondAttribute="width" id="pEM-7Z-i3H"/>
+                                            <constraint firstItem="uxG-7s-BuP" firstAttribute="centerX" secondItem="l7Q-4T-4a3" secondAttribute="centerX" id="rOF-ve-A6v"/>
                                             <constraint firstAttribute="bottom" secondItem="7mx-Cb-COO" secondAttribute="bottom" id="xMz-d4-Ryh"/>
                                         </constraints>
                                         <connections>

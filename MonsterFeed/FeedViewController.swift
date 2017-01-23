@@ -43,7 +43,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
                             
                             for(_, post) in postsSnap {
                                 if let userID = post["userId"] as? String {
-                                    //got through the usersIDs in the following
+                                    //go through the usersIDs in the 'following'
                                     for each in self.following {
                                         if each == userID {
                                             let postObject = Post()
@@ -54,6 +54,12 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
                                                 postObject.pathToImage = image
                                                 postObject.postId = postID
                                                 postObject.userId = userID
+                                                
+                                                if let people = post["peopleWhoLike"] as? [String:AnyObject] {
+                                                    for(_, person) in people {
+                                                        postObject.peopleWhoLike.append(person as! String) 
+                                                    }
+                                                }
                                                 
                                                 self.posts.append(postObject)
                                             }
@@ -87,7 +93,17 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         cell.imageView.downloadImage(from: self.posts[indexPath.row].pathToImage)
         cell.authorLabel.text = self.posts[indexPath.row].author
-        cell.likes.text = "\(self.posts[indexPath.row].like) Likes"
+        cell.likes.text = "\(self.posts[indexPath.row].like!) Likes"
+        cell.postID = self.posts[indexPath.row].postId
+        
+        for person in self.posts[indexPath.row].peopleWhoLike {
+            if person == FIRAuth.auth()!.currentUser!.uid {
+                cell.likeButton.isHidden = true
+                cell.unlikeButton.isHidden = false
+                break
+            }
+        }
+        
         
         return cell
     }
